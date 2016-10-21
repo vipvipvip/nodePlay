@@ -38,6 +38,7 @@ function yQuote(req, res) {
     .catch((err) => res.send(err));
 };
 
+// Added to do valuation using Hotel valuation
 function yStatsQuote(req, res) {
     if (!req.params.ticker) {
             res.send({
