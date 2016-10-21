@@ -1,0 +1,24 @@
+{
+  "name": "nodeplay",
+  "version": "1.0.0",
+  "description": "command line play with Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "create": "claudia create --region us-east-1 --api-module bot",
+    "deploy" : "claudia update",
+    "testbot" : "claudia test-lambda —event ./testdata/basicTest.json"    
+  },
+  "author": "Dikesh Chokshi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.14.0",
+    "lodash": "^4.13.1",
+    "mssql": "^3.3.0",
+    "node-sqlserver-unofficial": "^1.4.0",
+    "restify": "^4.0.4",
+    "tds": "^0.1.0"
+  }
+}
