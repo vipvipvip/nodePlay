@@ -50,4 +50,5 @@ app.use((err, request, response, next) => {
   response.status(500).send('Something broke!')
 })
 
+console.log('Listening on port 3000.');
 app.listen(3000)  

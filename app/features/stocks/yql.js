@@ -46,7 +46,7 @@ function yStatsQuote(req, res) {
                         "errno": "ENOTICKER",
                         "syscall": "yQuote",
                         "hostname": req.hostname,
-                        "host": "query.yahooapis.com",
+                        "host": "query1.finance.yahoo.com",
                         "port": 443
                         }
                     );
