@@ -53,7 +53,7 @@ function yStatsQuote(req, res) {
             return;
     };
     uGetHttp.getContent(_getYahooStatistics(req.params.ticker))
-    .then((data) => res.send(JSON.parse(data).quoteSummary.result))
+    .then((data) => res.send(JSON.parse(data)))
     .catch((err) => res.send(err));
 };  
 
