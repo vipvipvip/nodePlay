@@ -9,6 +9,7 @@ var _getQuoteUrl = function(ticker) {
     var _url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20("
     _url += tickers.substr(0,tickers.length) 
     _url +=  ")&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
+	console.log(_url);
     return _url; 
 };
 
@@ -16,7 +17,7 @@ var _getYahooStatistics = function(ticker) {
     var _url = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/";
     _url += ticker;
     _url += "?formatted=true&crumb=eMLeV7lI4S7&lang=en-US&region=US&modules=defaultKeyStatistics%2CfinancialData%2CcalendarEvents&corsDomain=finance.yahoo.com"
-console.log(_url);
+	console.log(_url);
     return _url;
 };
 function yQuote(req, res) {
