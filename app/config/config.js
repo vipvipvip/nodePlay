@@ -5,6 +5,8 @@ var dbconfig = {
     password: 'AdminCenseo',
 };
 
+var roccURL = 'http://iminers.com/rocc/rocc.php?symbol=';
+
 const numbersToAdd = [  
   3,
   4,
@@ -14,5 +16,7 @@ const numbersToAdd = [
 
 module.exports = {
     dbconfig:dbconfig,
-    numbersToAdd: numbersToAdd
+    numbersToAdd: numbersToAdd,
+    roccURL:roccURL
+
 }

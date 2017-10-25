@@ -21,7 +21,11 @@ var queryDB = require('./sqlquery')
 // http://localhost:3000/stocks/queryDB
 router.get('/queryDB', queryDB.query)
 // http://localhost:3000/stocks/queryDB/aapl
-router.get('/queryDB/:ticker', queryDB.query)
+router.get('/queryDB/:ticker', queryDB.query);
+
+// http://localhost:3000/stocks/rocc/aapl
+var roccQ = require('./rocc');
+router.get('/rocc/:ticker/:id?', roccQ.getRocc);
 
 var yQ = require('./yql')
 // http://localhost:3000/stocks/yq
